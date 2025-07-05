@@ -11,15 +11,29 @@
     <!-- daisy ui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <style>
         .poppins-thin {
   font-family: "Poppins", sans-serif;}</style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'bike-primary': '#E76F51',
+            'bg-bike-primary':'rgba(231, 111, 81, 0.1)',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 <body class="poppins-thin">
-   <header>
+   <header class="md:container mx-auto">
     <nav>
         <div class="navbar bg-base-100">
-  <div class="navbar-start">
+  <div class="flex-1">
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
         <svg
@@ -44,7 +58,7 @@
         <li><a>Contact</a></li>
       </ul>
     </div>
-    <a class="btn btn-ghost text-xl">Bike Dekho</a>
+    <a class="font-bold text-xl">Bike Dekho</a>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
@@ -54,11 +68,90 @@
     <li><a>Contact</a></li>
     </ul>
   </div>
-  <div class="navbar-end">
-    <a class="btn">Button</a>
+  <div class="">
+    <a class="btn btn-error bg-bike-primary text-white">Button</a>
   </div>
 </div>
     </nav>
+    <div class="carousel w-full lg:h-[550px]">
+      <!-- slide 1 -->
+  <div id="slide1" class="carousel-item relative w-full bg-bike-primary">
+    <div class="flex flex-col lg:flex-row mx-auto p-7 lg:p-28">
+    <!-- text-content -->
+     <div class="flex-1">
+      <h1 class="text-6xl font-bold text-black mb-5">Ride-on R15 V4 <br> with Smile</h1>
+      <p class="text-base text-slate-700 mb-6 font-light">Amet minim mollit non deserunt ullamco <br>est sit aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit mollit.</p>
+<button class="btn btn-error bg-bike-primary text-white">Purchase</button>
+     </div>
+     <!-- image content -->
+      <div class="flex-1">
+        <img class="w-[400px]" src="images/others/extrabike.png" alt="">
+      </div>
+   </div>
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide4" class="btn btn-circle">❮</a>
+      <a href="#slide2" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <!-- slide 2 -->
+ <div id="slide2" class="carousel-item relative w-full bg-bike-primary">
+    <div class="flex flex-col lg:flex-row mx-auto p-7 lg:p-28">
+    <!-- text-content -->
+     <div class="flex-1">
+      <h1 class="text-6xl font-bold text-black mb-5">Ride-on R15 V4 <br> with Smile</h1>
+      <p class="text-base text-slate-700 mb-6 font-light">Amet minim mollit non deserunt ullamco <br>est sit aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit mollit.</p>
+<button class="btn btn-error bg-bike-primary text-white">Purchase</button>
+     </div>
+     <!-- image content -->
+      <div class="flex-1">
+        <img class="w-[400px]" src="images/slider/bike2.png" alt="">
+      </div>
+   </div>
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide1" class="btn btn-circle">❮</a>
+      <a href="#slide3" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <!-- slide 3 -->
+  <div id="slide3" class="carousel-item relative w-full bg-bike-primary">
+    <div class="flex flex-col lg:flex-row mx-auto p-7 lg:p-28">
+    <!-- text-content -->
+     <div class="flex-1">
+      <h1 class="text-6xl font-bold text-black mb-5">Ride-on R15 V4 <br> with Smile</h1>
+      <p class="text-base text-slate-700 mb-6 font-light">Amet minim mollit non deserunt ullamco <br>est sit aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit mollit.</p>
+<button class="btn btn-error bg-bike-primary text-white">Purchase</button>
+     </div>
+     <!-- image content -->
+      <div class="flex-1">
+        <img class="w-[400px]" src="images/slider/bike3.png" alt="">
+      </div>
+   </div>
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide2" class="btn btn-circle">❮</a>
+      <a href="#slide4" class="btn btn-circle">❯</a>
+    </div>
+    </div>
+  <!-- slide 4 -->
+  <div id="slide4" class="carousel-item relative w-full bg-bike-primary">
+    <div class="flex flex-col lg:flex-row mx-auto p-7 lg:p-28">
+    <!-- text-content -->
+     <div class="flex-1">
+      <h1 class="text-6xl font-bold text-black mb-5">Ride-on R15 V4 <br> with Smile</h1>
+      <p class="text-base text-slate-700 mb-6 font-light">Amet minim mollit non deserunt ullamco <br>est sit aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit mollit.</p>
+<button class="btn btn-error bg-bike-primary text-white">Purchase</button>
+     </div>
+     <!-- image content -->
+      <div class="flex-1">
+        <img class="w-[400px]" src="images/slider/bike4.png" alt="">
+      </div>
+   </div>
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide3" class="btn btn-circle">❮</a>
+      <a href="#slide1" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+</div>
    </header>
+   <main class="md:container mx-auto"></main>
 </body>
 </html>
