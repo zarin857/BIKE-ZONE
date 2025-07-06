@@ -11,7 +11,8 @@
     <!-- daisy ui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <!-- tailwindcss -->
+      <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .poppins-thin {
   font-family: "Poppins", sans-serif;}</style>
@@ -73,7 +74,7 @@
   </div>
 </div>
     </nav>
-    <div class="carousel w-full lg:h-[550px]">
+    <div class="carousel w-full lg:h-[550px] mb-40">
       <!-- slide 1 -->
   <div id="slide1" class="carousel-item relative w-full bg-bike-primary">
     <div class="flex flex-col lg:flex-row mx-auto p-7 lg:p-28">
@@ -152,6 +153,73 @@
   </div>
 </div>
    </header>
-   <main class="md:container mx-auto"></main>
+   <main class="md:container mx-auto">
+    <!-- featured bikes -->
+     <section>
+      <div class="text-center space-y-6">
+        <h1 class="text-5xl font-semibold text-black">Fetured Bikes In This Year</h1>
+        <h6 class="text-red-400 text-sm">Best bike collection</h6>
+      </div>
+       <div class="flex flex-col lg:flex-row mt-10 px-11 lg:px-28 space-y-6">
+        <img src="images/others/feature-bike.png" alt="">
+        <img src="images/others/feature-bike.png" alt="">
+        <img src="images/others/feature-bike.png" alt="">
+       </div>
+     </section>
+     <!-- latest-news -->
+     <section class="my-24">
+      <div>
+      <h1 class="font-semibold text-5xl text-center mb-12">latest News</h1>
+          <!-- card -->
+      <div class="flex flex-col lg:flex-row gap-5">
+        <div class="card bg-base-100 shadow-xl">
+            <!-- card 1 -->
+  <figure>
+    <img
+      src="images/others/latest1.png"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body space-y-5">
+    <h2 class="card-title font-semibold text-2xl text-black">Ducati XDIAVEL S-73</h2>
+    <p class="text-[#6C6C6C] text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+    <div class="card-actions">
+      <button class="btn bg-bike-primary text-white px-3.5 py-3.5">Read More</button>
+    </div>
+  </div>
+</div>
+        <div class="card bg-base-100 shadow-xl">
+            <!-- card 2-->
+  <figure>
+    <img
+      src="images/others/latest2.png"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body space-y-5">
+    <h2 class="card-title font-semibold text-2xl text-black">Ducati XDIAVEL S-73</h2>
+    <p class="text-[#6C6C6C] text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+    <div class="card-actions">
+      <button class="btn bg-bike-primary text-white px-3.5 py-3.5">Read More</button>
+    </div>
+  </div>
+</div>
+        <div class="card bg-base-100 shadow-xl">
+            <!-- card 3 -->
+  <figure>
+    <img
+      src="images/others/latest3.png"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body space-y-5">
+    <h2 class="card-title font-semibold text-2xl text-black">Ducati XDIAVEL S-73</h2>
+    <p class="text-[#6C6C6C] text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+    <div class="card-actions">
+      <button class="btn bg-bike-primary text-white px-3.5 py-3.5">Read More</button>
+    </div>
+  </div>
+</div>
+      </div>
+      </div>
+     </section>
+   </main>
 </body>
 </html>
